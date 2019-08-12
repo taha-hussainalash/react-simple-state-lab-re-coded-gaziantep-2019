@@ -8,13 +8,13 @@ export default class Cell extends Component {
       color: this.props.value
     }
   }
-}
+  
   handleClick = () => {
-    ...this.setState({
+    this.setState({
       color: '#333'
-    });
+    })
   }
- } 
+  
   render() {
     return (
       <div 
